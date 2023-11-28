@@ -1,0 +1,101 @@
+/* css property to target every element of html */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* body */
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-image: url(images/bg.jpg);
+   background-size: cover;
+}
+
+/* decoration for every element visible on the browser */
+.movie-container{
+   width: 80%;
+   height: auto;
+   border: 5px solid grey;
+   position: relative;
+   overflow: hidden;
+   background: transparent;
+   backdrop-filter: blur(50px);
+   box-shadow: 0 50px 55px -10px #000;
+}
+
+/* main movie poster set to right */
+figure{
+   float: right;
+}
+
+/* Movie description heading */
+.movie-container > h1{
+   position: absolute;
+   color: #fff;
+   padding: 50px 80px;
+   font-size: 125px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+}
+
+/* movie description sub-heading */
+h3{
+   position: absolute;
+   font-size: 30px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+   color:#fff;
+   top: 180px;
+   left: 250px;
+}
+
+
+/* brief movie paragraph decoration */
+.movie-text{
+   position: absolute;
+   text-align: center;
+   color: #fff;
+   top: 220px;
+   right: 600px;
+   padding: 80px 80px;
+   font-size: 18px;
+}
+
+/* button decoration for watch me */
+button{
+   position: absolute;
+   top: 80%;
+   left: 10%;
+   padding: 20px 70px;
+   font-size: 30px;
+   border-radius: 0px;
+   border: 2px solid #fff;
+   background: none;
+   background-size: 100% 100%;
+   color: #f1f1f1;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* hover property for button when hovered with mouse */
+button:hover{
+   color: #000;
+   background: grey;
+}
+
+/* decoration for 'watch me' link */
+button a{
+   text-decoration: none;
+   color: white;
+}
+/* decoration for 'watch me' when hovered */
+button a:hover{
+   color: black;
+}
